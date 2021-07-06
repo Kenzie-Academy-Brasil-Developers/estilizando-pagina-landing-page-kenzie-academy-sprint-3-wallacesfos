@@ -6,13 +6,13 @@
     --primary: #00043e;
     --secundary: #007aff;
     --cinza: #303030;
-    --cinza_claro: #818181;
+    --cinza_claro: #818181; font-weight: bold;
     --branco: #FFFFFF;
 }
 
 
 body{
-    font-family: 'Lato' Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     margin:0;
 }
 
@@ -178,6 +178,11 @@ figcaption{
     width: 100%;
     display: flex;
     align-items: center;
+    font-size: 15px
+}
+
+.secaoCursos h1, h2, h3{
+    font-size: 19px
 }
 
 .secaoCursos_article{
@@ -208,4 +213,115 @@ figcaption{
 
 .secaoCalendar{
     text-align: center;
+    font-size: 15px;
+    color: var(--cinza_claro);
+
+}
+
+.secaoCalendar h1, h2, h3{
+    font-size: 19px;
+    color: black;
+}
+
+.calendario{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calendario_list{
+    border: 2px solid var(--primary);
+    margin-bottom: 10px;
+    min-width: 200px;
+    width: 60%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.calendario_list p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.calendario_list span{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: var(--cinza_claro);
+}
+.calendario_list button{
+    width: 80%;
+    height: 30%;
+    margin-bottom: 10%;
+    background: var(--secundary);
+    color: var(--branco);
+    border: 1px solid var(--cinza_claro);
+    border-radius: 5px;
+
+}
+
+.calendario-data{
+    color: var(--branco);
+    background: var(--primary);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    padding: 40px;
+
+}
+
+
+.secaoContato{
+    color: var(--cinza_claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secaoContato h1,h2,h3{
+    color: black;
+}
+
+.secaoContato-informacoes ul{
+    list-style: none;
+}
+
+.secaoContato-informacoes ul li a{
+    text-decoration: none;
+    color: var(--cinza_claro);
+}
+
+.form-input-model label{
+    display: none;
+}
+
+.form-input-model input{
+    width: 70%;
+    height: 30px;
+    margin: 2%;
+}
+
+.form-input-model textarea{
+    width: 70%;
+    height: 50px;
+}
+
+footer p{
+    display: none;
+}
+
+footer{
+    margin-top: 3%;
+    background-color: lightslategray;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
 }
