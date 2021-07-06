@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@200&display=swap');
+
+
+:root{
+    --primary: #00043e;
+    --secundary: #007aff;
+    --cinza: #303030;
+    --cinza_claro: #818181;
+    --branco: #FFFFFF;
+}
+
+
+body{
+    font-family: 'Lato' Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+h1, h2, h3, h4{
+    font-family:'Montserrat', sans-serif;
+}
+h3{
+    font-weight: 900;
+}
+
+
+    /*  header  */
+
+header{
+    background: var(--primary);
+}
+
+label{
+    float: right;
+}
+
+.menu{
+    display: none;
+    background-color: var(--cinza_claro);
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.menu_link{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+
+#marcador{
+    display: none;
+}
+
+#marcador:checked + .menu{
+    display: block;
+}
+
+.navbar_toggle{
+    color: white;
+}
+
+
+/* Main  */
+
+
+.main{
+    width: 100%;
+}
+
+.secaoDestaque{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 90px;
+    background: var(--primary);
+}
+
+.secaoDestaque h2{
+    font-size: 63px;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.secaoDestaque p{
+    font-size: 21px;
+    color: var(--branco);
+    border: 0px;
+}
+
+.secaoDestaqueFormulario{
+    display: flex;
+}
+
+.secaoDestaqueFormulario button{
+    font-size: 14px;
+    padding:8px;
+    background-color: var(--secundary);
+    color: var(--branco);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 0;
+}
+
+.secaoDestaqueFormulario input{
+    height: 30px;
+    border: wr;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 0;
+}
+
+
+/* Segunda seção */
+
+
+.secaoSobre{
+    background-color: var(--branco);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 19px;
+    color: var(--cinza_claro);
+    
+}
+
+
+.secaoSobre h2{
+   font-size: 24px;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left:10%;
+    margin-right: 10%;
+
+}
+
+.flex-col{
+    width: 100%;
+}
+
+.flex img{
+    width: 80%;
+}
+
+figcaption{
+    display: none;
+}
+
+.flex_par1{
+    color: black;
+}
+
+.flex_button{
+    background: transparent;
+    border: 1px solid var(--cinza_claro);
+    padding: 3% 20%;
+}
+
+
+
+/*Seção de cursos */
+
+.secaoCursos{
+    background-color: var(--branco) ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.secaoCursos_article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.secaoCursos_article img{
+    width: 30%;
+}
+.secaoCursos_article p{
+    color: var(--cinza_claro);
+}
+
+.list_cursos{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Section calendario */
+
+.secaoCalendar{
+    text-align: center;
+}
