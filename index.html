@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="icon-96x96.webp">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Landing Page Kenzie Academy</title>
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Kenzie</title>
 </head>
 <body>
-  
-  <!-- CABEÇALHO -->
-  <header class="topo">
+  <header>
+    <nav class="navbar">
+      <div class="navbar_div">
 
-    <div class="large-container">
-      <!-- LOGO -->
-      <figure>
-        <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
-        <figcaption>Logo Kenzie Academy</figcaption>  
-      </figure>
+        <a href="#" class="navbar-brand">
+          <img id="upper" src="./assets/img/logo.svg" alt="logo" width="142">
+        </a>
 
-      <!-- MENU DE NAVEGAÇÃO -->
-      <nav>
-        <ul>
-          <li><a href="#1">Sobre a Kenzie</a></li>
-          <li><a href="#2">Agenda</a></li>
-          <li><a href="#3">Contato</a></li>
+        <label for="marcador">
+          <img class="navbar_toggle" width="40px" src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/>
+        </label>
+
+        <input type="checkbox" id="marcador">
+
+
+        <ul class="menu">
+          <li class="menu_item"><a class="menu_link" href="#1" >Sobre a Kenzie</a></li>
+          <li class="menu_item"><a class="menu_link" href="#2">Agenda</a></li>
+          <li class="menu_item"><a class="menu_link" href="#3">Contato</a></li>
         </ul>
-      </nav>
-    </div>
 
+      </div>
+    </nav>
   </header>
 
-  <!-- PÁGINA INICIAL -->
-  <main class="inicial">
-
-    <!-- ÁREA DE DESTAQUE -->
+  
+  <main class="main">
     <section class="secaoDestaque">
 
-      <h2>Lorem ipsum dolor sit Python</h2>
+      <h2 >Lorem ipsum dolor sit Python</h2>
       <p>100% Online</p>
 
       <!-- FORMULÁRIO -->
@@ -46,10 +46,10 @@
         <input type="email"  placeholder="E-mail" required>
         <button type="button">Subscribe</button>
       </div>
-
     </section>
 
-    <!-- SEÇÃO SOBRE -->
+    <!--Segunda Sectioooooooooooooooooooooon-->
+
     <section class="secaoSobre">
 
       <article class="flex">
@@ -58,19 +58,20 @@
         <div class="flex-col">
 
           <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
+          <p class="flex_par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
           </p>
 
-          <span>Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam.</span>
-
-          <button>Subscribe</button>
+          <span class="flex_par2">Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam.</span>
+          <br>
+          <br>
+          <button class="flex_button">Subscribe</button>
 
         </div>
 
         <!-- COLUNA DIREITA -->
         <div class="flex-col">
 
-          <figure>
+          <figure class="flex_figure_python">
             <img src="assets/img/python.png" alt="python">
             <figcaption>python</figcaption>  
           </figure>      
@@ -80,7 +81,7 @@
         <!-- COLUNA ESQUERDA -->
         <div class="flex-col">
 
-            <figure>
+            <figure class="flex_figure_js">
               <img src="assets/img/JavaScript-logo.png" alt="Java Script">
               <figcaption>Java Script</figcaption>  
             </figure>      
@@ -98,27 +99,23 @@
                 <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
                 <li>1914 translation by H. Rackham</li>
             </ul>
-
         </div>
-
-        
-
       </article>
-
     </section>
 
+    <hr>
     <!-- SEÇÃO CURSOS -->
     <section class="secaoCursos">
 
-      <article>
+      <article class="secaoCursos_article">
 
         <h2>COURSES</h2>
         <p>What we offer</p>
 
         <!-- LISTA DE CURSOS -->
-        <ul>
+        <ul class="list_cursos">
         
-          <li>
+          <li class="html_curso">
             <img src="assets/img/html-css.png" alt="">
             <h3>Html/Css</h3>
             <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
@@ -142,7 +139,7 @@
             <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
 
-          <li>
+          <li class="django_curso">
             <img src="assets/img/dj.png" alt="">
             <h3>Django</h3>
             <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
@@ -160,15 +157,15 @@
 
     </section>
 
+    <hr>
     <section class="secaoCalendar">
 
       <h2>SCHEDULE</h2>
       <p>Lorem ipsum dolor sit schedule</p>
-
       <!-- LISTA CALENDÁRIO -->
       <ul class="calendario">
 
-        <li>
+        <li class="calendario_list">
           <span class="calendario-data">22/02</span>
           <h3>HTML/CSS</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
@@ -178,7 +175,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="calendario_list">
           <span class="calendario-data">23/02</span>
           <h3>JavaScript</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
@@ -188,7 +185,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="calendario_list">
           <span class="calendario-data">24/02</span>
           <h3>Python</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
@@ -202,7 +199,10 @@
 
     </section>
 
+<hr>
+
     <section class="secaoContato">
+      <h2>Contact</h2>
 
       <div class="flex">
 
@@ -214,9 +214,9 @@
             <p>Contact us and we'll get back to you within 24 hours.</p>
             
             <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+              <li><a href="#"><span>Chicago, US</span></a></li>
+              <li><a href="tel:001515151515"><span>+00 1515151515</span></a></li>
+              <li><a href="malito:myemail@something.com"><span>myemail@something.com</span></a></li>
             </ul>
 
           </div>
@@ -226,21 +226,23 @@
         <!-- COLUNA LADO DIRETO -->
         <div class="flex-col">
           
-          <h2>Contact</h2>
           
-          <form action="">
+          <form id="formulario" action="">
 
+           <div class="guarda">
             <div class="form-input-model">
               <label for="nome">Nome</label>
               <input type="text" placeholder="Name" id="nome" name="nome">
             </div>
 
-            <div class="form-input-model">
-              <label for="email">E-mail</label>
-              <input type="text" placeholder="E-mail" id="email" name="email">
-            </div>
+              <div class="form-input-model">
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="E-mail" id="email" name="email">
+              </div>
 
-            <div class="form-input-model">
+           </div>
+
+            <div class="form-input-model textarea_form">
               <label for="mensagem">E-mail</label>
               <textarea name="mensagem" id="mensagem"></textarea>
             </div>
@@ -248,21 +250,15 @@
             <input type="submit" value="Send">
 
           </form>
-
         </div>
-
       </div>
-
     </section>
-
   </main>
 
   <footer>
+    <a href="#upper"><img src="https://img.icons8.com/material-outlined/48/000000/collapse-arrow.png"/></a> 
     <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
   </footer>
 
-  <script src="assets/js/script.js"></script>
 </body>
 </html>
-
-
