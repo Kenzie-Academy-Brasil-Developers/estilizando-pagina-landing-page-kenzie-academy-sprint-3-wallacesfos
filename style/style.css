@@ -110,7 +110,7 @@ label{
 
 .secaoDestaqueFormulario input{
     height: 30px;
-    border: wr;
+    border: none;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     border: 0;
@@ -228,6 +228,7 @@ figcaption{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
 }
 
 .calendario_list{
@@ -263,6 +264,7 @@ figcaption{
     color: var(--branco);
     border: 1px solid var(--cinza_claro);
     border-radius: 5px;
+    font-size: 32px;
 
 }
 
@@ -277,12 +279,13 @@ figcaption{
 
 }
 
-
+/*Seção contatos */
 .secaoContato{
     color: var(--cinza_claro);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .secaoContato h1,h2,h3{
@@ -291,11 +294,32 @@ figcaption{
 
 .secaoContato-informacoes ul{
     list-style: none;
+    text-align: start;
+    padding: 0;
+    font-size: 15px;
 }
 
-.secaoContato-informacoes ul li a{
+.secaoContato-informacoes ul li:nth-child(1) a{
     text-decoration: none;
     color: var(--cinza_claro);
+    background-image: url(../assets/img/icons8-place-marker-24.png);
+    background-repeat: no-repeat;
+}
+.secaoContato-informacoes ul li:nth-child(2) a{
+    text-decoration: none;
+    color: var(--cinza_claro);
+    background-image: url(../assets/img/icons8-cell-phone-24.png);
+    background-repeat: no-repeat;
+}
+.secaoContato-informacoes ul li:nth-child(3) a{
+    text-decoration: none;
+    color: var(--cinza_claro);
+    background-image: url(../assets/img/icons8-email-24.png);
+    background-repeat: no-repeat;
+}
+
+.secaoContato-informacoes ul li a span{
+    margin: 30px;
 }
 
 .form-input-model label{
@@ -324,4 +348,180 @@ footer{
     height: 40px;
     display: flex;
     justify-content: center;
+    margin: 0;
+}
+
+    
+
+    /*hovers*/
+    .flex_button:hover{
+        background-color: var(--primary);
+        color: white;
+        border: 1px solid var(--secundary);
+    }
+
+    .secaoDestaqueFormulario button:hover{
+        background-color: var(--primary);
+        border: 1px solid var(--secundary);
+    }
+
+    .calendario_list button:hover{
+        background-color: var(--primary);
+        border: 1px solid var(--secundary);
+    }
+    
+    .menu_link:hover{
+        padding: 3px 7px;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+
+@media (min-width: 769px){
+    /*header*/
+    header {
+        width: 100%;
+    }
+    .navbar-brand img{
+        width: 70px;
+    }
+    .menu {
+        display: flex;
+        background: transparent;
+        float: right;
+        width: 20%;
+        justify-content: space-between;
+        margin-right: 20%;
+        transform: translateY(30%);
+
+    }
+    .navbar_toggle {
+        display: none;
+    }
+    .menu_link {
+        color: white;
+        font-weight: bold;
+    }
+
+
+
+    /* Main */
+    .secaoDestaque{
+        background-image: url(../assets/img/background-destaque.webp);
+        background-color: #cccccc; /* Used if the image is unavailable /
+        height: 500px; / You must set a specified height /
+        background-position: center; / Center the image /
+        background-repeat: no-repeat; / Do not repeat the image */
+        background-size: cover;
+        width: 100%;
+    }
+    .secaoDestaqueFormulario{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .secaoDestaqueFormulario input{
+        width: 25%;
+    }
+
+    
+    /* Seção do python e javascript */
+
+    .flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align:start;
+    }
+    .flex-col{
+        width: 50%;
+        margin-bottom: 10%;
+    }
+    .flex_button{
+        justify-content: flex-start;
+    }
+
+    .flex_figure_python img{
+        height: 300px;
+        width: 500px;
+    }
+
+    .flex_figure_js{
+        width: 300px;
+    }
+
+
+    /* Seção dos cursos */
+
+    .list_cursos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .list_cursos li{
+        width: 33.3%;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .list_cursos li img{
+      width: 30%;
+    }
+
+    .html_curso h3{
+        margin-top: 10%;
+    }
+    .html_curso p{
+        margin-top: 12%;
+    }
+    .django_curso img{
+        width: 50px;
+        height: 125px;
+    }
+
+    /*Calendario */
+
+    .calendario{
+        flex-wrap: nowrap;
+    }
+
+    /* Seção contatos */
+
+    .secaoContato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secaoContato .flex{
+        width: 80%;
+        justify-content: space-between;
+    }
+  
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .guarda{
+        display: flex;
+        justify-content: center;
+    }
+    .form-input-model input{
+        width: 90%;
+    }
+    .textarea_form{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+        height: 100px;
+        background-color: var(--cinza_claro)    ;
+    }
+    footer p {
+        display: block;
+    }
 }
