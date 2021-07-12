@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@200&display=swap');
+
+
+:root{
+    --primary: #00043e;
+    --secundary: #007aff;
+    --cinza: #303030;
+    --cinza_claro: #818181; font-weight: bold;
+    --branco: #FFFFFF;
+}
+
+
+body{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+h1, h2, h3, h4{
+    font-family:'Montserrat', sans-serif;
+}
+h3{
+    font-weight: 900;
+}
+
+
+    /*  header  */
+
+header{
+    background: var(--primary);
+}
+
+label{
+    float: right;
+}
+
+.menu{
+    display: none;
+    background-color: var(--cinza_claro);
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.menu_link{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+
+#marcador{
+    display: none;
+}
+
+#marcador:checked + .menu{
+    display: block;
+}
+
+.navbar_toggle{
+    color: white;
+}
+
+
+/* Main  */
+
+
+.main{
+    width: 100%;
+}
+
+.secaoDestaque{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 90px;
+    background: var(--primary);
+}
+
+.secaoDestaque h2{
+    font-size: 63px;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.secaoDestaque p{
+    font-size: 21px;
+    color: var(--branco);
+    border: 0px;
+}
+
+.secaoDestaqueFormulario{
+    display: flex;
+}
+
+.secaoDestaqueFormulario button{
+    font-size: 14px;
+    padding:8px;
+    background-color: var(--secundary);
+    color: var(--branco);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 0;
+}
+
+.secaoDestaqueFormulario input{
+    height: 30px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 0;
+}
+
+
+/* Segunda seção */
+
+
+.secaoSobre{
+    background-color: var(--branco);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 19px;
+    color: var(--cinza_claro);
+    
+}
+
+
+.secaoSobre h2{
+   font-size: 24px;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left:10%;
+    margin-right: 10%;
+
+}
+
+.flex-col{
+    width: 100%;
+}
+
+.flex img{
+    width: 80%;
+}
+
+figcaption{
+    display: none;
+}
+
+.flex_par1{
+    color: black;
+}
+
+.flex_button{
+    background: transparent;
+    border: 1px solid var(--cinza_claro);
+    padding: 3% 20%;
+}
+
+
+
+/*Seção de cursos */
+
+.secaoCursos{
+    background-color: var(--branco) ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 15px
+}
+
+.secaoCursos h1, h2, h3{
+    font-size: 19px
+}
+
+.secaoCursos_article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.secaoCursos_article img{
+    width: 30%;
+}
+.secaoCursos_article p{
+    color: var(--cinza_claro);
+}
+
+.list_cursos{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Section calendario */
+
+.secaoCalendar{
+    text-align: center;
+    font-size: 15px;
+    color: var(--cinza_claro);
+
+}
+
+.secaoCalendar h1, h2, h3{
+    font-size: 19px;
+    color: black;
+}
+
+.calendario{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%; 
+}
+
+.calendario_list{
+    border: 2px solid var(--primary);
+    margin-bottom: 10px;
+    min-width: 200px;
+    width: 60%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.calendario_list p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.calendario_list span{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: var(--cinza_claro);
+}
+.calendario_list button{
+    width: 80%;
+    height: 30%;
+    margin-bottom: 10%;
+    background: var(--secundary);
+    color: var(--branco);
+    border: 1px solid var(--cinza_claro);
+    border-radius: 5px;
+    font-size: 32px;
+
+}
+
+.calendario-data{
+    color: var(--branco);
+    background: var(--primary);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    padding: 40px;
+
+}
+
+/*Seção contatos */
+.secaoContato{
+    background: rgb(243, 240, 240);
+    color: var(--cinza_claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secaoContato h1,h2,h3{
+    color: black;
+}
+
+.secaoContato-informacoes ul{
+    list-style: none;
+    text-align: start;
+    padding: 0;
+    font-size: 15px;
+}
+
+.secaoContato-informacoes ul li:nth-child(1) a{
+    text-decoration: none;
+    color: var(--cinza_claro);
+    background-image: url(../assets/img/icons8-place-marker-24.png);
+    background-repeat: no-repeat;
+}
+.secaoContato-informacoes ul li:nth-child(2) a{
+    text-decoration: none;
+    color: var(--cinza_claro);
+    background-image: url(../assets/img/icons8-cell-phone-24.png);
+    background-repeat: no-repeat;
+}
+.secaoContato-informacoes ul li:nth-child(3) a{
+    text-decoration: none;
+    color: var(--cinza_claro);
+    background-image: url(../assets/img/icons8-email-24.png);
+    background-repeat: no-repeat;
+}
+
+.secaoContato-informacoes ul li a span{
+    margin: 30px;
+}
+
+.form-input-model label{
+    display: none;
+}
+
+.form-input-model input{
+    width: 70%;
+    height: 30px;
+    margin: 2%;
+}
+
+.form-input-model textarea{
+    width: 70%;
+    height: 50px;
+}
+
+footer p{
+    display: none;
+}
+
+footer{
+    margin-top: 3%;
+    background-color: lightslategray;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+    
+
+    /*hovers*/
+    .flex_button:hover{
+        background-color: var(--primary);
+        color: white;
+        border: 1px solid var(--secundary);
+    }
+
+    .secaoDestaqueFormulario button:hover{
+        background-color: var(--primary);
+        border: 1px solid var(--secundary);
+    }
+
+    .calendario_list button:hover{
+        background-color: var(--primary);
+        border: 1px solid var(--secundary);
+    }
+    
+    .menu_link:hover{
+        padding: 3px 7px;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+
+@media (min-width: 769px){
+    /*header*/
+    header {
+        width: 100%;
+    }
+    .navbar-brand img{
+        width: 70px;
+    }
+    .menu {
+        display: flex;
+        background: transparent;
+        float: right;
+        width: 20%;
+        justify-content: space-between;
+        margin-right: 20%;
+        transform: translateY(30%);
+
+    }
+    .navbar_toggle {
+        display: none;
+    }
+    .menu_link {
+        color: white;
+        font-weight: bold;
+    }
+
+
+
+    /* Main */
+    .secaoDestaque{
+        background-image: url(../assets/img/background-destaque.webp);
+        background-color: #cccccc; /* Used if the image is unavailable /
+        height: 500px; / You must set a specified height /
+        background-position: center; / Center the image /
+        background-repeat: no-repeat; / Do not repeat the image */
+        background-size: cover;
+        width: 100%;
+    }
+    .secaoDestaqueFormulario{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .secaoDestaqueFormulario input{
+        width: 25%;
+    }
+
+    
+    /* Seção do python e javascript */
+
+    .flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align:start;
+    }
+    .flex-col{
+        width: 50%;
+        margin-bottom: 10%;
+    }
+    .flex_button{
+        justify-content: flex-start;
+    }
+
+    .flex_figure_python img{
+        height: 300px;
+        width: 500px;
+    }
+
+    .flex_figure_js{
+        width: 300px;
+    }
+
+    /* Seção dos cursos */
+
+    .list_cursos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .list_cursos li{
+        width: 33.3%;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .list_cursos li img{
+      width: 30%;
+    }
+
+    .html_curso h3{
+        margin-top: 10%;
+    }
+    .html_curso p{
+        margin-top: 12%;
+    }
+    .django_curso img{
+        width: 50px;
+        height: 125px;
+    }
+
+    /*Calendario */
+
+    .calendario{
+        flex-wrap: nowrap;
+    }
+
+    /* Seção contatos */
+
+    .secaoContato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secaoContato .flex{
+        width: 80%;
+        justify-content: space-between;
+    }
+  
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .guarda{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .cruel{
+        width: 50%;
+    }
+
+    .form-input-model input{
+        width: 90%;
+    }
+    .textarea_form{
+        width: 100%;
+        text-align: center;
+    }
+    #mensagem{
+        padding: 0;
+        margin: 0;
+        width: 96%;
+    }
+    #botaoSend{
+        position: relative;
+        margin-top: 20px;
+        left: 44%;
+        background-color: var(--branco);
+        border-radius: 5px;
+        border: 1px solid gray;
+        padding: 5px 10px;
+
+    }
+    #botaoSend:hover{
+        border: 1px solid black;
+        
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+        height: 100px;
+        background-color: var(--branco);
+    }
+    footer p {
+        display: block;
+    }
+
+    .columnpy{
+        display:flex;
+        width:100%;
+        flex-direction:row;
+    }
+    
+    .columnjs{
+        display:flex;
+        width:100%;
+        flex-direction:row;
+        background: rgb(243, 240, 240);
+        
+    }
+}
